@@ -49,6 +49,14 @@ bin/kafka-console-consumer.sh \
 --topic test \
 --from-beginning
 
+START CONSOLE CONSUMER AND READ MESSAGES FROM OFFSET 1
+FROM SPECIFIC PARTITION
+bin/kafka-console-consumer.sh \
+--bootstrap-server localhost:9092 \
+--partition 1 \
+--topic test \
+--offset 1
+
 START CONSOLE CONSUMER WITH SPECIFIC CONSUMER GROUP
 bin/kafka-console-consumer.sh \
 --bootstrap-server localhost:9092 \
